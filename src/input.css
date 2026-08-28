@@ -2,6 +2,7 @@
 
 @theme {
     --animate-fade-up: fadeUp 2.2s ease-out infinite;
+    --color-brand: rgb(247, 178, 5);
     @keyframes fadeUp{
         0%{
             opacity:0;
@@ -17,3 +18,4 @@
         }
     }
 }
+

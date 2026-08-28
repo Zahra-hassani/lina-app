@@ -13,10 +13,10 @@
      <nav class="h-18 w-full bg-white/30 backdrop-blur-sm dark:bg-black/25 z-50 flex justify-between items-center px-3 sticky top-0 left-0">
         <img src="./imgs/logo.svg" class="h-full p-2 w-fit" alt="Logo">
         <ul class="lg:flex justify-between dark:text-white font-bold items-center gap-3 hidden">
-            <li><a href="home.html">خانه</a></li>
-            <li><a href="#">فروشگاه</a></li>
-            <li><a href="#">درباره ما</a></li>
-            <li><a href="#">تماس با ما</a></li>
+            <li><a class="hover:text-brand" href="home.html">خانه</a></li>
+            <li><a class="hover:text-brand" href="#">فروشگاه</a></li>
+            <li><a class="hover:text-brand" href="#">درباره ما</a></li>
+            <li><a class="hover:text-brand" href="#">تماس با ما</a></li>
         </ul>
         <div class="hidden lg:flex justify-between text-xl items-center gap-3">
             <div class="py-2.5 px-3 rounded-full dark:hover:bg-white/20 hover:bg-stone-100 text-center">🔎</div>
@@ -35,9 +35,56 @@
     <!-- nav bar end -->
      <!-- hero start -->
       <div class="h-screen w-full flex justify-center flex-col relative after:absolute after:content-[''] after:h-full after:w-full after:bg-black/55 items-center gap-5 bg-[url(../public/imgs/hero1.jpg)] bg-no-repeat bg-center bg-cover" id="hero">
-        <p class="text-white animate-fade-up font-bold text-2xl text-shadow-[0_0_3px] text-shadow-black">کیفیت را با ما تجربه کنید</p>
-        <p class="text-white animate-fade-up text-shadow-[0_0_4px] text-shadow-black">تجربه جدید با لینا</p>
+        <p class="text-white animate-fade-up z-40 font-bold text-2xl text-shadow-[0_0_3px] text-shadow-black">کیفیت را با ما تجربه کنید</p>
+        <p class="text-white animate-fade-up z-40 text-shadow-[0_0_4px] text-shadow-black">تجربه جدید با لینا</p>
       </div>
      <!-- hero end -->
+      <!-- banner start -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 p-5 bg-brand">
+          <div>
+              <img src="./imgs/banner-1.jpg" alt="banner-1">
+            </div>
+            <div class="w-full h-full" id="banner-parent">
+            <div class="w-full text-center">
+             <h1 class="font-bold text-center">داستان لینا</h1>
+            </div>
+                <div id="card1" class="p-4 flex flex-col items-center justify-between">
+                    <img src="./imgs/1640006987-svg1.svg" alt="">
+                    <div dir="rtl">
+                        <h1 class="text-right">از عمده فروشی توزیع تا تولید</h1>
+                        <p class="bg-white p-5 rounded-br-2xl">بنیان گذار لینا از ابتدای کار خود در حوزه توزیع محصولات غذایی، همواره رویای تولید محصولات متفاوت را در سر می پروراند. تا اینکه در سال 1377 به همکاری شرکاء در کارخانه ای به مساحت 16000 متر مربع با تولید محصول با طعم و بسته بندی خاص به این مهم دست یافت. </p>
+                    </div>
+                </div>
+                <div id="card2" class="p-4 flex flex-col items-center justify-between">
+                    <img src="./imgs/1640006987-svg2.svg" alt="">
+                    <div dir="rtl">
+                        <h1 class="text-right">اولین تجربه تولید</h1>
+                        <p class="bg-white p-5 rounded-br-2xl">در سال 1379 با حذف مضرات رنگ مصنوعی، برای اولین بار از رنگ طبیعی در محصولات خود استفاده کرد(لینای لوبیایی)، اما به دلیل نارضایتی مشتری ناشی از کمرنگ بودن، تمامی محصولات خود را از بازار جمع آوری کرد.</p>
+                    </div>
+                </div>
+                <div id="card1" class="p-4 flex flex-col items-center justify-between">
+                    <img src="./imgs/1640006987-svg1.svg" alt="">
+                    <div dir="rtl">
+                        <h1 class="text-right">از عمده فروشی توزیع تا تولید</h1>
+                        <p class="bg-white p-5 rounded-br-2xl"> </p>
+                    </div>
+                </div>
+                <div id="card1" class="p-4 flex flex-col items-center justify-between">
+                    <img src="./imgs/1640006987-svg1.svg" alt="">
+                    <div dir="rtl">
+                        <h1 class="text-right">از عمده فروشی توزیع تا تولید</h1>
+                        <p class="bg-white p-5 rounded-br-2xl"> </p>
+                    </div>
+                </div>
+                <div id="card1" class="p-4 flex flex-col items-center justify-between">
+                    <img src="./imgs/1640006987-svg1.svg" alt="">
+                    <div dir="rtl">
+                        <h1 class="text-right">از عمده فروشی توزیع تا تولید</h1>
+                        <p class="bg-white p-5 rounded-br-2xl"> </p>
+                    </div>
+                </div>
+            </div>
+       </div>
+      <!-- banner end -->
 </body>
 </html>
