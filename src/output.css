@@ -13,6 +13,8 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
@@ -21,6 +23,7 @@
     --text-3xl--line-height: calc(2.25 / 1.875);
     --font-weight-bold: 700;
     --radius-2xl: 1rem;
+    --radius-4xl: 2rem;
     --animate-spin: spin 1s linear infinite;
     --blur-sm: 8px;
     --default-transition-duration: 150ms;
@@ -288,8 +291,17 @@
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
+  .rounded-tl-2xl {
+    border-top-left-radius: var(--radius-2xl);
+  }
+  .rounded-tl-4xl {
+    border-top-left-radius: var(--radius-4xl);
+  }
   .rounded-tl-full {
     border-top-left-radius: calc(infinity * 1px);
+  }
+  .rounded-tr-4xl {
+    border-top-right-radius: var(--radius-4xl);
   }
   .rounded-tr-full {
     border-top-right-radius: calc(infinity * 1px);
@@ -297,11 +309,21 @@
   .rounded-br-2xl {
     border-bottom-right-radius: var(--radius-2xl);
   }
+  .rounded-br-4xl {
+    border-bottom-right-radius: var(--radius-4xl);
+  }
   .rounded-br-full {
     border-bottom-right-radius: calc(infinity * 1px);
   }
+  .rounded-bl-4xl {
+    border-bottom-left-radius: var(--radius-4xl);
+  }
   .rounded-bl-full {
     border-bottom-left-radius: calc(infinity * 1px);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .border-t-2 {
     border-top-style: var(--tw-border-style);
@@ -317,6 +339,9 @@
   }
   .border-green-900 {
     border-color: var(--color-green-900);
+  }
+  .border-white {
+    border-color: var(--color-white);
   }
   .bg-brand {
     background-color: var(--color-brand);
@@ -357,6 +382,9 @@
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
   .py-2\.5 {
     padding-block: calc(var(--spacing) * 2.5);
   }
@@ -379,6 +407,10 @@
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
   }
   .text-xl {
     font-size: var(--text-xl);
@@ -513,9 +545,19 @@
       height: calc(var(--spacing) * 60);
     }
   }
+  .lg\:h-full {
+    @media (width >= 64rem) {
+      height: 100%;
+    }
+  }
   .lg\:w-60 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 60);
+    }
+  }
+  .lg\:w-full {
+    @media (width >= 64rem) {
+      width: 100%;
     }
   }
   .lg\:grid-cols-2 {
